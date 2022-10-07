@@ -1,0 +1,73 @@
+.horario {
+    background: url(../../img/backgrounds/stars-bg.jpg);
+    color: #fff;
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.header {
+    background-color: #fff;
+    padding: 10px 10px;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+}
+
+.header-menu img {
+    width: 120px;
+    margin-right: 40px;
+}
+
+.header-menu nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+
+.header-menu-socials-cart span ul {
+    display: flex;
+    align-items: center;
+    gap: 20px
+}
+
+.header-menu-socials-cart .cart {
+    max-width: 80px;
+}
+
+/* CORES DO MENU */
+
+.menu-items ul li a {
+    background-color: #FFB200;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.socials-cart ul li {
+    background: #FFB200;
+    padding: 10px;
+    border-radius: 60px;
+}
+
+.socials-cart ul li:last-child {
+    background: none;
+}
+
+/* RESPONSIVIDADE */
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+
+}

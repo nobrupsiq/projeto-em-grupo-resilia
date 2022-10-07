@@ -1,0 +1,47 @@
+
+p{
+    height: 15px;
+    font-size: 30px;
+    text-align: center;
+}
+h1{
+    height: 50px;
+    color: #EC607C;
+    text-align: center;
+}
+.imagem{
+    display: flex;
+    text-align: center;
+    background-size: cover;
+    margin: 15px;
+
+
+    width: 120px;
+    height: 120px
+
+}
+.nome{
+    text-align: center;
+display: flex;
+
+}
+.imagem img{
+    background-color: white;
+    border: 1px solid #EC607C;
+    border-radius: 10%;
+}
+.lapis{
+    background:url(../../img/backgrounds/bg-all.jpg);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.lapis img{
+    max-width: 200px;
+
+
+}
+
+.historia{
+display: flex;
+}

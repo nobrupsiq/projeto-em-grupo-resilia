@@ -1,0 +1,13 @@
+.footer {
+    background: url(../../img/backgrounds/stars-bg.jpg);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Poppins';
+    padding: 10px;
+}
+
+.footer-img {
+    width: 120px;
+}

@@ -168,3 +168,21 @@
     }
 
 }
+
+@media (max-width: 500px) {
+    .header-menu img {
+        max-width: 80px;
+        margin-right: 0px;
+    }
+    .socials-cart ul li {
+        width: 10px;
+        padding: 8px;
+    }
+    .socials-cart ul li:nth-child(4) {
+        width: 80px;
+    }
+    .menu-items {
+        top: 8.6rem;
+    }
+
+}

@@ -221,3 +221,58 @@
         padding: 5px 15px;
     }
 }
+
+
+/* BEM VINDO PARTE 3 */
+
+.bem-vindo-3 {
+    background-color: #EC607C;
+}
+
+.bem-vindo-3-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 10px;
+    gap: 120px
+}
+
+.bem-vindo-3-container img {
+    filter: drop-shadow(20px 20px 20px) contrast(150%);
+}
+
+.bem-vindo-3-texto h1 {
+    font-size: 3rem;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.bem-vindo-3-texto p {
+    font-size: 2rem;
+    color: #fff;
+    margin-top: 20px;
+    max-width: 35rem;
+}
+
+@media (max-width: 900px) {
+    .bem-vindo-3-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 80px 10px;
+        gap: 80px
+    }
+}
+
+@media (max-width: 500px) {
+    .bem-vindo-3-texto h1 {
+        font-size: 2rem;
+    }
+    .bem-vindo-3-texto p {
+        font-size: 1.6rem;
+    }
+    .bem-vindo-3-container img {
+        max-width: 14rem;
+    }
+}

@@ -92,7 +92,7 @@
     top: 3px;
 }
 
-/* BEM VINDO RESPONSIVIDADE */
+/* BEM VINDO RESPONSIVIDADE PARTE 1 */
 
 
 @media (max-width: 1170px) {
@@ -130,4 +130,94 @@
         padding: 5px 15px;
     }
 
+}
+
+/* BEM VINDO PARTE 2 */
+
+.bem-vindo-2 {
+    background: url(../../img/backgrounds/bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bem-vindo-2-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    padding: 80px 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bem-vindo-2-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 520px;
+}
+
+.bem-vindo-2-items h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin: 40px 0 40px 0;
+    text-shadow: 2px 2px 0 #fff;
+    text-transform: uppercase;
+    color: #EC607C;
+    letter-spacing: 4px;
+    filter: contrast(120%) drop-shadow(4px 2px 4px #000);
+}
+
+.bem-vindo-2-items img {
+    max-width: 18rem;
+    filter: drop-shadow(20px 20px 20px) contrast(150%);
+}
+
+.bem-vindo-2-items a {
+    background-color: #FFB200;
+    padding: 12px 40px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    border-radius: 40px;
+    box-shadow: 2px 3px 1px #4B2F28;
+    position: relative;
+    transition: .2s
+}
+
+.bem-vindo-2-items a:before {
+    content: url(../../img/icones/book.svg);
+    position: relative;
+    top: 3px;
+    margin-right: 10px;
+}
+.bem-vindo-2-items a:hover {
+    background-color: #EC607C;
+    scale: 1.1;
+}
+
+/* BEM VINDO PARTE 2 RESPONSIVIDADE */
+
+@media (max-width: 960px) {
+    .bem-vindo-2-items {
+        margin-left: 0;
+    }
+    .bem-vindo-2-items img {
+        max-width: 12rem;
+    }
+    .bem-vindo-2-items h1 {
+        color: #EC607C;
+        text-shadow: 2px 2px 0 #fff;
+        font-size: 2rem;
+    }
+    .bem-vindo-2 {
+        background: url(../../img/backgrounds/bg2opacity.png);
+        transition: .8s;
+    }
+}
+
+@media (max-width: 500px) {
+    .bem-vindo-2-items a {
+        padding: 5px 15px;
+    }
 }

@@ -11,3 +11,14 @@
 .footer-img {
     width: 120px;
 }
+
+.footer-socials {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-socials li {
+    background: #FFB200;
+    padding: 10px;
+    border-radius: 60px;
+}

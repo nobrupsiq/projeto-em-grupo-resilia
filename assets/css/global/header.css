@@ -4,6 +4,7 @@
     font-family: 'Poppins';
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     padding: 10px;
 }
@@ -34,7 +35,14 @@
 
 .header-menu nav ul {
     display: flex;
-    gap: 30px;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.header-menu ul li a {
+    transition: .1s;
+    font-weight: 500;
 }
 
 
@@ -54,20 +62,109 @@
     background-color: #FFB200;
     padding: 5px 10px;
     border-radius: 20px;
+    box-shadow: 1px 2px 1px #4B2F28;
+}
+
+.header-menu ul li a:hover {
+    display: block;
+    background-color: #62dfbb;
+    scale: 1.1;
 }
 
 .socials-cart ul li {
     background: #FFB200;
     padding: 10px;
     border-radius: 60px;
+    box-shadow: 1px 2px 1px #4B2F28;
+    transition: .1s;
 }
 
-.socials-cart ul li:last-child {
-    background: none;
+.socials-cart ul li:hover {
+    background: #db9a00;
+    scale: 1.1;
 }
+
+
+.socials-cart ul li:nth-child(4) {
+    background: none;
+    box-shadow: none;
+}
+
+/* MOBILE MENU */
+
+#btn-mobile {
+    display: none;
+}
+
 
 /* RESPONSIVIDADE */
 
-@media only screen and (min-width: 768px) and (max-width: 979px) {
+@media (max-width: 940px) {
+    .menu-items {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 8.8rem;
+        left:0;
+        background: #fff;
+        width: 100%;
+        height: 0px;
+        border-bottom: 2px solid #FFB200;
+        border-top: 2px solid #FFB200;
+        transition: .6s;
+        z-index: 1;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    .header-menu-socials-cart span ul {
+        gap: 10px;
+    }
+    .horario {
+        font-size: .7em;
+    }
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+        background-color: #FFB200;
+        border-radius: 60px;
+
+    }
+    .menu-items.active {
+        height: 14%;
+        visibility: visible;
+    }
+    #hamburguer {
+        display: block;
+        border-top: 3px solid;
+        width: 28px;
+
+    }
+
+    #hamburguer::after, #hamburguer::before {
+        content: "";
+        display: block;
+        width: 28px;
+        height: 3px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .6s;
+        position: relative;
+    }
+    #hamburguer.active  {
+        border-top-color: transparent;
+    }
+    #hamburguer.active::before {
+        transform: rotate(135deg);
+    }
+    #hamburguer.active::after {
+        transform: rotate(-135deg);
+        top: -8px;
+    }
 
 }

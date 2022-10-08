@@ -1,0 +1,133 @@
+.bem-vindo {
+    background: url(../../img/backgrounds/bg-all.jpg);
+}
+
+.bem-vindo-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    padding: 80px 10px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.bem-vindo-container .personagem {
+    position: relative;
+    max-width: 28rem;
+    filter: drop-shadow(20px 20px 10px) contrast(150%);
+}
+
+.texto-botao {
+    text-align: center;
+    max-width: 44rem;
+
+}
+
+.bem-vindo-container .texto-botao p {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 4px 2px 1px #000;
+}
+
+.bem-vindo-container .texto-botao h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-top: 20px;
+    text-shadow: 2px 2px 0 #fff;
+    text-transform: uppercase;
+    color: #FFB200;
+    letter-spacing: 4px;
+    filter: contrast(120%) drop-shadow(1px 2px 4px #000);
+
+}
+
+.bem-vindo-container .texto-botao h1 span {
+    color: #EC607C;
+}
+.bem-vindo-container .texto-botao h1 span:nth-child(2) {
+    color: #4B2F28;
+}
+
+/* BEM VINDO BOTÕES */
+
+.bem-vindo-container .bem-vindo-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding-top: 40px;
+}
+
+.bem-vindo-container .bem-vindo-btn a {
+    display: flex;
+    align-items: center;
+    background-color: #FFB200;
+    padding: 12px 40px;
+    font-weight: 500;
+    border-radius: 40px;
+    box-shadow: 2px 3px 1px #4B2F28;
+    position: relative;
+    transition: .2s;
+}
+
+.bem-vindo-container .bem-vindo-btn a:hover {
+    background-color: #EC607C;
+    scale: 1.1;
+}
+
+.bem-vindo-container .bem-vindo-btn a::before {
+    content: url(../../img/icones/book.svg);
+    margin-right: 10px;
+    display: block;
+    position: relative;
+    top: 3px;
+}
+.bem-vindo-container .bem-vindo-btn a:last-child::before {
+    content: url(../../img/icones/telephone.svg);
+    margin-right: 10px;
+    display: block;
+    position: relative;
+    top: 3px;
+}
+
+/* BEM VINDO RESPONSIVIDADE */
+
+
+@media (max-width: 1170px) {
+    .bem-vindo-container .personagem {
+        max-width: 20rem;
+    }
+    .bem-vindo-container .texto-botao h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .bem-vindo-container {
+        flex-direction: column;
+        padding: 60px 10px;
+    }
+    .bem-vindo-container .personagem {
+        max-width: 18rem;
+    }
+    .texto-botao {
+        max-width: 32rem;
+    }
+    .bem-vindo-container .texto-botao h1 {
+        font-size: 2rem;
+        margin-top: 0px;
+    }
+    .bem-vindo-container .texto-botao p {
+        position: relative;
+        top: -320px;
+    }
+    .bem-vindo-container .bem-vindo-btn {
+        gap: 10px;
+    }
+    .bem-vindo-container .bem-vindo-btn a {
+        padding: 5px 15px;
+    }
+
+}

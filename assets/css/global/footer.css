@@ -22,3 +22,35 @@
     padding: 10px;
     border-radius: 60px;
 }
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 680px) {
+    .footer-img {
+        width: 80px;
+    }
+    .footer p {
+        font-size: .6em;
+    }
+    .footer-socials {
+        width: 120px;
+    }
+    .footer-socials li {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 440px) {
+    .footer p {
+        font-size: .4em;
+    }
+    .footer-socials {
+        gap: 10px;
+    }
+    .footer-socials li {
+        padding: 5px;
+    }
+    .footer-socials {
+        width: 80px;
+    }
+}

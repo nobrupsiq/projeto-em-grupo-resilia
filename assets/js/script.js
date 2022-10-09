@@ -26,9 +26,10 @@ const cart = document.querySelector('.cart');
 // peguei o atributo 'data-value' e toda vez que o usuário clicar no botão de adicionar
 // o meu contador vai adicionar +1 ao meu atributo data-value que está no html
 // que eu coloquei como 0
+var cartValor = document.querySelector('#cartvalue');
 let contador = 0
 function ativarCarrinho() {
-    cartvalue.setAttribute('data-value', ++contador)
+    cartValor.setAttribute('data-value', ++contador)
     cart.classList.add('ativo');
 }
 

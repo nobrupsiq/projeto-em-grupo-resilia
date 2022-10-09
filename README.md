@@ -47,7 +47,7 @@
 
 ## BRAINSTORM DO GRUPO
 
-> Tivemos várias idéias, pizzaria, doceria, loja de tênis, loja de roupas, loja de maquiagem. Mas a idéia definita apareceu durante a aula de Soft Skills da facilitadora Elizangela, onde foi passado um PDF na tela e notamos em uma das imagens o Homer simpson degustando um Donuts... E então conversamos sobre criar uma loja de Donuts e a votação foi unânime.
+> Tivemos várias idéias, pizzaria, doceria, loja de tênis, loja de roupas, loja de maquiagem. Mas a idéia definitiva apareceu durante a aula de Soft Skills da facilitadora Elizangela, onde foi passado um PDF na tela e notamos em uma das imagens o Homer simpson degustando um Donuts... E então conversamos sobre criar uma loja de Donuts e a votação foi unânime.
 
 <br>
 

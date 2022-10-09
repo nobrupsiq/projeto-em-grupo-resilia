@@ -241,6 +241,7 @@
     }
     .menu-items {
         top: 8.6rem;
+        top: 100%;
     }
 
 }

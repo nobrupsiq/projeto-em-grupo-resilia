@@ -26,9 +26,11 @@ const cart = document.querySelector('.cart');
 // peguei o atributo 'data-value' e toda vez que o usuário clicar no botão de adicionar
 // o meu contador vai adicionar +1 ao meu atributo data-value que está no html
 // que eu coloquei como 0
+var cartValor = document.querySelector('#cartvalue');
 let contador = 0
-function ativarCarrinho() {
-    cartvalue.setAttribute('data-value', ++contador)
+function ativarCarrinho(event) {
+    if(event.type === 'touchstart') event.preventDefault()
+    cartValor.setAttribute('data-value', ++contador)
     cart.classList.add('ativo');
 }
 
@@ -37,4 +39,5 @@ function ativarCarrinho() {
 // a função será disparada
 plus.forEach((item) => {
     item.addEventListener('click', ativarCarrinho);
+    item.addEventListener('touchstart', ativarCarrinho);
 })

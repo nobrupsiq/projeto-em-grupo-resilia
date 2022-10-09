@@ -148,6 +148,7 @@
     .article-historia-texto p {
         font-size: 1.4rem;
         max-width: 24rem;
+        text-align: center;
     }
     .article-equipe {
         padding-top: 40px;

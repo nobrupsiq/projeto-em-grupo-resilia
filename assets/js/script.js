@@ -64,18 +64,3 @@ function validador() {
         texto.style.color = "#f44336";
     }
 }
-
-// BOTÃO DE ENVIAR QUE DISPARA UM ALERTA AO CLICK OU TOUCH
-
-const formEnviar = document.querySelector('.form-btn');
-const sucess = document.querySelector('.form-sucesso');
-
-function formEnviado(event) {
-    if (event.type === 'touchstart') event.preventDefault();
-    sucess.innerHTML = 'Enviado com sucesso!'
-    sucess.style.color = "#4caf50";
-
-}
-
-formEnviar.addEventListener('click', formEnviado);
-formEnviar.addEventListener('touchstart', formEnviado);

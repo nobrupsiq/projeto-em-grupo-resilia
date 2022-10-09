@@ -9,9 +9,14 @@
     padding: 10px;
 }
 
+
+
 .header {
     background-color: #fff;
     padding: 10px 10px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
 }
 
 .container {
@@ -37,7 +42,6 @@
     display: flex;
     align-items: center;
     gap: 20px;
-
 }
 
 .header-menu ul li a {
@@ -54,6 +58,47 @@
 
 .header-menu-socials-cart .cart {
     max-width: 80px;
+    position: relative;
+}
+
+
+/* CART INTERAÇÃO COM JS */
+.cart.ativo::after {
+    color: #fff;
+    content: attr(data-value);
+    font-size: 1rem;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    border-radius: 20px;
+    background-color: #EC607C;
+    z-index: 1;
+    border: solid 2px #000;
+    cursor: pointer;
+}
+
+.cart.ativo::after {
+    animation: pulse 1.2s infinite ease-in-out;
+    animation-direction: alternate;
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        background: #EC607C;
+    }
+
+    100% {
+        transform: scale(1.1);
+        background: #62dfbb;
+        color: #000;
+    }
 }
 
 /* CORES DO MENU */
@@ -106,6 +151,7 @@
         justify-content: center;
         position: absolute;
         top: 8.8rem;
+        top: 100%;
         left:0;
         background: #fff;
         width: 100%;
@@ -121,7 +167,9 @@
         gap: 10px;
     }
     .horario {
+        position: sticky;
         font-size: .7em;
+        /* display:none */
     }
     #btn-mobile {
         display: flex;
@@ -137,7 +185,11 @@
     }
     .menu-items.active {
         height: 14%;
+        /* height: auto; */
+        padding:2em 0;
+        /* transition: 0.5s; */
         visibility: visible;
+        /* display:none */
     }
     #hamburguer {
         display: block;

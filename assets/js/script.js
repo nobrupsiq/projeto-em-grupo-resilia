@@ -74,6 +74,7 @@ function formEnviado(event) {
     if (event.type === 'touchstart') event.preventDefault();
     sucess.innerHTML = 'Enviado com sucesso!'
     sucess.style.color = "#4caf50";
+
 }
 
 formEnviar.addEventListener('click', formEnviado);

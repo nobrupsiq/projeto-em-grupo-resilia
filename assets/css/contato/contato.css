@@ -68,6 +68,7 @@ form input {
     font-family: 'Poppins';
     font-size: 1em;
     border-radius: 20px;
+    position: relative;
 }
 
 form textarea {
@@ -121,4 +122,19 @@ form button:hover {
     .formulario h1 {
         font-size: 2rem;
     }
+}
+
+/* FORMULARIO VALIDADOR */
+
+#validador-texto {
+    display: block;
+    position: relative;
+    left: 12px;
+    font-family: 'Poppins';
+}
+
+.form-sucesso {
+    font-size: 1.2em;
+    font-family: 'Poppins';
+    text-align: center;
 }

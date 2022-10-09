@@ -1,0 +1,164 @@
+.sobre-bg {
+    background: url(../../img/backgrounds/bg-all.jpg);
+}
+
+.sobre-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 80px 10px;
+    text-align: center;
+}
+
+.sobre-container img {
+    max-width: 20rem;
+    margin: 0 auto;
+    filter: drop-shadow(20px 20px 20px) contrast(130%);
+}
+
+.sobre-container h1 {
+    font-size: 3rem;
+    margin-top: 40px;
+    color: #fff;
+    text-shadow: 2px 2px 0 #EC607C;
+    filter: contrast(120%) drop-shadow(4px 2px 4px #000);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+/* HISTÓRIA */
+
+.article-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 10px;
+
+}
+
+.article-historia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+}
+
+.article-historia img {
+    max-width: 20rem;
+    filter: drop-shadow(20px 20px 20px) contrast(130%);
+}
+
+.article-historia-texto h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #EC607C;
+    text-shadow: 2px 2px 0 #FFB200;
+    filter: contrast(120%) drop-shadow(2px 2px 2px #000);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+}
+
+.article-historia-texto p {
+    max-width: 30rem;
+    margin-top: 15px;
+    font-size: 1.6rem;
+}
+
+
+/* EQUIPE */
+
+.article-equipe {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 120px 10px;
+}
+
+.article-equipe h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #EC607C;
+    text-shadow: 2px 2px 0 #FFB200;
+    filter: contrast(120%) drop-shadow(2px 2px 2px #000);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.equipe-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 80px 10px 0px 10px;
+}
+
+.equipe-container img {
+    filter: drop-shadow(10px 10px 10px) contrast(130%);
+}
+
+.equipe-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    margin: 10px 20px;
+    border: 2px solid #EC607C;
+    border-radius: 40px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        box-shadow: 3px 3px -5px 20px #00000012;
+}
+
+.equipe-container .marnuts img {
+    max-width: 15rem;
+}
+.equipe-container .donoturno img {
+    max-width: 15rem;
+}
+.equipe-container .donurano img {
+    max-width: 12rem;
+}
+.equipe-container .donurano {
+    padding: 24px 24px;
+    position: relative;
+}
+
+.equipe-container .donurano h3 {
+    position: relative;
+    top: 24px
+}
+
+.equipe-container h3 {
+    font-size: 2rem;
+    color: #EC607C;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 0 #000;
+    filter: contrast(120%);
+}
+
+
+/* SOBRE RESPONSIVIDADE */
+
+
+@media (max-width: 900px) {
+    .article-equipe {
+        padding-bottom: 40px;
+    }
+    .article-historia {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .article-historia img {
+        max-width: 12rem;
+    }
+    .article-historia-texto p {
+        font-size: 1.4rem;
+        max-width: 24rem;
+    }
+    .article-equipe {
+        padding-top: 40px;
+    }
+}

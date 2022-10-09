@@ -137,7 +137,7 @@
     .cardapio-items-container ul {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
+        gap: 20px;
     }
     .cardapio-items-container ul li {
         width: 180px;

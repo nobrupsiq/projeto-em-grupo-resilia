@@ -13,7 +13,7 @@
 
 .bem-vindo-container .personagem {
     position: relative;
-    max-width: 28rem;
+    max-width: 18rem;
     filter: drop-shadow(20px 20px 10px) contrast(150%);
 }
 

@@ -96,9 +96,6 @@
 
 
 @media (max-width: 1170px) {
-    .bem-vindo-container .personagem {
-        max-width: 20rem;
-    }
     .bem-vindo-container .texto-botao h1 {
         font-size: 3rem;
     }
@@ -107,10 +104,10 @@
 @media (max-width: 900px) {
     .bem-vindo-container {
         flex-direction: column;
-        padding: 60px 10px;
+        padding: 90px 10px;
     }
     .bem-vindo-container .personagem {
-        max-width: 18rem;
+        max-width: 14rem;
     }
     .texto-botao {
         max-width: 32rem;
@@ -121,7 +118,7 @@
     }
     .bem-vindo-container .texto-botao p {
         position: relative;
-        top: -320px;
+        top: -310px;
     }
     .bem-vindo-container .bem-vindo-btn {
         gap: 10px;
